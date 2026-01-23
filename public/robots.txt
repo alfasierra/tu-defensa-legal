@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+Sitemap: https://tudefensalegal.com.ar/sitemap.xml
+Sitemap: https://tudefensalegal.com.ar/sitemap-images.xml

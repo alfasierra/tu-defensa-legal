@@ -1,1 +1,122 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@import "tailwindcss";
+
+h1, h2, h3, h4, h5, h6, p, span {
+  font-family: 'Manrope', sans-serif;
+}
+
+h1 {
+  font-size: 2.75rem;
+  line-height: 3rem;
+}
+h2 {
+  font-size: 2.5rem;
+  color: #041914;
+}
+h3 {
+  font-size: 2rem;
+  color: #041914;
+}
+p {
+  font-size: 1.125rem;
+  color: #434d48
+}
+li::marker {
+  color: #627a93;
+}
+
+.p-menubar {
+  max-width: 70vw;
+}
+@media (min-width: 961px) {
+  .p-menubar {
+    max-width: unset;
+    width: fit-content;
+  }
+}
+
+.p-menubar-mobile-active {
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+
+.p-menubar-root-list {
+  border-bottom-left-radius: var(--p-menubar-border-radius);
+  border-bottom-right-radius: var(--p-menubar-border-radius);
+}
+
+.whatsapp-icon {
+  position: fixed;
+  bottom: 5vh;
+  right: 5vw;
+  z-index: 1000;
+}
+@media (min-width: 768px) {
+  .whatsapp-icon img {
+    width: 75px !important;
+    height: 75px !important;
+  }
+  @media (min-width: 1024px) {
+    .whatsapp-icon img {
+      width: 100px !important;
+      height: 100px !important;
+    }
+  }
+}
+
+.whatsapp-icon img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.element-hover {
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: var(--radius-3xl);
+}
+
+.element-hover:hover {
+  background-color: #b89867;
+}
+
+.button-blue {
+  background-color: #627a93;
+  color: #fff;
+  font-weight: 500;
+  padding: 0.5rem;
+  border-radius: var(--radius-3xl);
+  cursor: pointer;
+  display: block;
+  text-align: center;
+  align-self: center;
+}
+
+.button-blue:hover {
+  transition: background-color 0.3s ease, color 0.3s ease;
+  background-color: #4a5f75;
+}
+
+.button-white {
+  background-color: #fff;
+  color: #041914;
+  font-weight: 500;
+  padding: 0.5rem;
+  border-radius: var(--radius-3xl);
+  cursor: pointer;
+  display: block;
+  text-align: center;
+  align-self: center;
+  border: 1px solid #fff;
+}
+
+.button-white:hover {
+  transition: background-color 0.3s ease, color 0.3s ease;
+  background-color: unset;
+}
+
+.map-container {
+  border-radius: var(--radius-3xl);
+  margin-top: 1.5rem;
+  margin-bottom: 4rem;
+}
