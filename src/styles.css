@@ -120,3 +120,39 @@ li::marker {
   margin-top: 1.5rem;
   margin-bottom: 4rem;
 }
+
+
+/* === GLOBAL RESPONSIVE FIXES === */
+html, body {
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Imágenes responsive */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Evitar desbordamiento en contenedores */
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Asegurar que los textos no se corten en móviles */
+h1, h2, h3, p, li {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* Overlay para imágenes de fondo en móviles */
+@media (max-width: 768px) {
+  .bg-cover {
+    background-position: center 30% !important;
+  }
+}
